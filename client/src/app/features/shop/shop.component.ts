@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { ShopService } from '../../core/services/shop.service';
 import { Product } from '../../shared/models/product';
 import { MatCard } from '@angular/material/card';
@@ -25,6 +25,7 @@ import { MatSelectChange } from '@angular/material/select';
 ],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss',
+   changeDetection: ChangeDetectionStrategy.Eager
 })
 export class ShopComponent implements OnInit {
 

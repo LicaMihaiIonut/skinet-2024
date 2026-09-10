@@ -12,7 +12,8 @@ import { ShopComponent } from "./features/shop/shop.component";
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, ShopComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  changeDetection: ChangeDetectionStrategy.Eager 
 })
 export class AppComponent {
   title = 'Skinet';
