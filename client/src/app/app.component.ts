@@ -8,6 +8,15 @@ import { Pagination } from './shared/models/pagination';
 import { ShopService } from './core/services/shop.service';
 import { ShopComponent } from "./features/shop/shop.component";
 
+/*@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, HeaderComponent, ShopComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
+  changeDetection: ChangeDetectionStrategy.Eager 
+})
+*/
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, ShopComponent],
@@ -15,6 +24,7 @@ import { ShopComponent } from "./features/shop/shop.component";
   styleUrl: './app.component.css',
   changeDetection: ChangeDetectionStrategy.Eager 
 })
+
 export class AppComponent {
   title = 'Skinet';
   
