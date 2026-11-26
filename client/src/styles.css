@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
-.container {
-    @apply mx-auto px-6
+@theme inline {
+    --color-primary: var(--mat-sys-primary);
+    --color-secondary: var(--mat-sys-secondary);
+    --color-error: var(--mat-sys-error);
 }
